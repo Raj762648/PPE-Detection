@@ -9,8 +9,7 @@ import time
 # ---------------- Page Config ----------------
 st.set_page_config(
     page_title="PPE Detection System",
-    layout="centered"
-)
+    layout="centered")
 
 st.title("🦺 PPE Detection System")
 st.write("Detect Personal Protective Equipment in images, videos, or live webcam feed")
@@ -28,7 +27,7 @@ st.sidebar.header("⚙️ Settings")
 mode = st.sidebar.radio(
     "Select Input Type",
     ["Image", "Video", "Webcam"]
-)
+    )
 
 conf_threshold = st.sidebar.slider(
     "Confidence Threshold",
@@ -36,7 +35,7 @@ conf_threshold = st.sidebar.slider(
     max_value=1.0,
     value=0.4,
     step=0.05
-)
+    )
 
 # ================= IMAGE MODE =================
 if mode == "Image":

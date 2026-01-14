@@ -5,7 +5,6 @@ __pycache__/
 
 data/
 runs/
-yolov8n.pt
 
 # C extensions
 *.so
